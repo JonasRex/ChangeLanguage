@@ -7,6 +7,16 @@ public class English extends Language{
     }
 
     @Override
+    public String askName() {
+        return "What's the name: ";
+    }
+
+    @Override
+    public String askAge() {
+        return "What's the age: ";
+    }
+
+    @Override
     public String chooseAnimal() {
         return """
                                 

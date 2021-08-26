@@ -7,6 +7,16 @@ public class Dansk extends Language{
     }
 
     @Override
+    public String askName() {
+        return "Skriv navnet: ";
+    }
+
+    @Override
+    public String askAge() {
+        return "Skriv alderen: ";
+    }
+
+    @Override
     public String chooseAnimal() {
         return """
                 

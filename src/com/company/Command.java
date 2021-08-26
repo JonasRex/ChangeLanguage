@@ -40,8 +40,8 @@ public class Command {
     public void chooseAnimal(Language lng){
         int answer = getIntInput(lng.chooseAnimal());
         switch (answer) {
-            case 1 -> animal = new Dog();
-            case 2 -> animal = new Cat();
+            case 1 -> animal = new Dog(getStringInput(lng.askName()), getIntInput(lng.askAge()));
+            case 2 -> animal = new Cat(getStringInput(lng.askName()), getIntInput(lng.askAge()));
         }
     }
 
